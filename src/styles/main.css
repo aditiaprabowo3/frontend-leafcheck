@@ -25,6 +25,7 @@ html {
 
 p {
   font-size: 18px !important;
+  color: #000000b3 !important;
 }
 
 .container-navbar {
@@ -34,6 +35,14 @@ p {
   position: fixed;
   left: 0;
   right: 0;
+}
+
+navbar-content {
+  transition: transform 0.4s;
+}
+
+.navbar-hidden {
+  transform: translateY(-80px) !important;
 }
 
 header nav {
@@ -88,12 +97,12 @@ nav .btn a {
 }
 
 nav .btn a:hover {
-  background-color: var(--btn-hover);
+  background-color: var(--primary-color);
   transition: all 0.2s ease-in;
 }
 
 .nav-link.active {
-  color: var(--font-color); 
+  color: var(--primary-color); 
   font-weight: bold;
 }
 
@@ -130,7 +139,7 @@ nav #hamburger {
 }
 
 .navbar-hidden {
-  transform: translateY(-80px) !important;
+  transform: translateY(-110px) !important;
 }
 
 /* section diagnose */
@@ -146,6 +155,7 @@ nav #hamburger {
 
 .container-diagnose h1 {
   font-size: 2.5rem;
+  color: var(--primary-color);
 }
 
 .btn-container {
@@ -264,8 +274,13 @@ nav #hamburger {
   text-align: center;
 }
 
+.prediction-result h2{
+color: var(--primary-color);
+}
+
 .prediction-result h3{
   margin-top: 18px;
+  color: var(--primary-color);
 }
 
 .prediction-result p {
@@ -385,7 +400,6 @@ header {
   padding-top: 16px;
   line-height: 28px;
 }
-
 
 .text-head span {
   border: 1.2px solid #166E3F;
@@ -746,4 +760,109 @@ footer p {
 .img-full {
   width: 100%;
   position: relative;
+}
+
+.container-about{
+  max-width: 80rem;
+  width: 100%;
+  margin: 180px auto 0 auto;
+}
+
+.container-about .text-head {
+  justify-content: center;
+  text-align: center;
+  max-width: 40rem;
+}
+
+.container-about .text-head h1 {
+  font-size: 40px;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-top: 24px;
+}
+
+.container-about .content {
+  display: flex;
+  justify-content: center;
+}
+
+.container-about .main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 64px;
+  gap: 48px; /* tambahkan ini untuk jarak tetap */
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 40px;
+}
+
+.container-about .img-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px; /* opsional untuk visual lebih lembut */
+  object-fit: cover;
+}
+
+.container-about .img-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.container-about .text-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.container-about .content-two {
+  margin-top: 120px;
+}
+
+.container-about .content-two .text-content {
+  max-width: 32rem;
+}
+
+.container-about .main-content {
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 40px;
+}
+
+.container-about .text-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 28rem;
+}
+
+.container-about .text-content h2 {
+  font-size: 34px;
+  color: var(--primary-color);
+}
+
+.container-about .text-content p {
+  padding-top: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 24px;
+  line-height: 30px;
+  color: var(--desc-text);
+}
+
+.container-about .btn a {
+  display: inline-block;
+  padding: 20px 40px;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 32px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: var(--primary-color);
+  border-radius: 50px;
+  box-shadow: 0 10px 20px 2px #156e3f78;
+}
+
+.container-about .btn a:hover {
+  background-color: var(--btn-hover);
+  transition: all 0.2s ease-in;
+  box-shadow: none;
 }

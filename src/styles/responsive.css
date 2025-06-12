@@ -8,6 +8,10 @@
     padding-right: 4%;
   }
 
+  navbar-content {
+    transition: transform 0.4s;
+  }
+
   .navbar-hidden {
     transform: translateY(-74px);
   }
@@ -31,6 +35,10 @@
 
   .container-diagnose h1 {
     margin-top: 72px;
+  }
+
+  .container-about {
+    padding: 0 4%;
   }
 }
 
@@ -128,6 +136,42 @@
   .container-diagnose {
     padding: 0 4%;
   }
+
+  .navbar-hidden {
+    transform: none !important;
+  }
+
+  .container-about .main-content {
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .container-about .text-content,
+  .container-about .img-content {
+    max-width: 100%;
+  }
+
+  .container-about .img-content img {
+    width: 100%;
+  }
+
+  .container-about .content-two .text-content {
+    order: 2;
+  }
+  
+  .container-about .content-two .img-content {
+    order: 1;
+  }
+
+  .container-about .text-content {
+    max-width: 32rem;
+  }
+
+  .main-content > * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 @media (max-width: 899px) {
@@ -168,6 +212,10 @@
     top: 0px;
   }
 
+  .navbar-hidden {
+    transform: none !important;
+  }
+
   header nav {
     padding-left: 4%;
     padding-right: 4%;
@@ -197,8 +245,13 @@
   }
 
   .hero-container h1 {
-    font-size: 50px;
+    font-size: 44px;
   }
+
+  
+.hero-container .text-wrapper {
+  max-width: 32rem;
+}
 
   .hero-container img {
     width: 100%;
@@ -438,7 +491,9 @@
     font-size: 14px;
   }
 
-  
+  .container-about .text-content h2 {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 380px) {

@@ -1,6 +1,7 @@
 const Home = {
     async render() {
         return `
+        <about-content></about-content>
         <fitur-content></fitur-content>
         <testimonial-content></testimonial-content>
         <qna-content></qna-content>
@@ -12,6 +13,24 @@ const Home = {
     async afterRender() {
         const header = document.querySelector("header");
         header.style.display = "block";
+        const navbar = document.querySelector("navbar-content");
+        const containerNavbar = navbar.querySelector(".container-navbar");
+
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener("scroll", () => {
+            if (lastScrollY < window.scrollY) {
+                containerNavbar.classList.add("navbar-hidden");
+            } else {
+                containerNavbar.classList.remove("navbar-hidden");
+            }
+
+            lastScrollY = window.scrollY;
+
+            if (window.scrollY <= 0) {
+                containerNavbar.classList.remove("navbar-hidden");
+            }
+        });
 
         // faq 
         const faqElements = document.querySelectorAll('.content-item');

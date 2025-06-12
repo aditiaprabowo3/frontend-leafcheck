@@ -38,7 +38,7 @@ const DiagnosePage = {
 
               // Tampilkan preview
               previewContainer.innerHTML = `<img src="${e.target.result}" 
-                alt="Preview" style="width:100%; height:100%; object-fit:cover; border-radius:16px;" />`;
+                alt="Preview" style="width:100%; height: 100%; object-fit:cover; border-radius:16px;" />`;
               previewContainer.style.display = 'block';
             };
 

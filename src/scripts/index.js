@@ -11,9 +11,8 @@ import "./components/testimonial";
 import "./components/qna";
 import "./components/getstarted";
 import "./components/footer";
-import "./components/selectmenu";
-import "./components/list-aksara";
 import "./components/diagnose-predict";
+import "./components/about";
 import App from "./views/app";
 
 const app = new App({
