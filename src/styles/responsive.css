@@ -247,11 +247,10 @@
   .hero-container h1 {
     font-size: 44px;
   }
-
   
-.hero-container .text-wrapper {
-  max-width: 32rem;
-}
+  .hero-container .text-wrapper {
+    max-width: 32rem;
+  }
 
   .hero-container img {
     width: 100%;
