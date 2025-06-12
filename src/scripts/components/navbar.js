@@ -8,7 +8,7 @@ class navbar extends HTMLElement {
         <div class= "container-navbar">
             <nav>
                 <div class="logo">
-                    <a href="#/">
+                    <a href="#">
                         <img src="./logo/brand.svg" width="130" alt="logo">
                     </a>
                 </div>
