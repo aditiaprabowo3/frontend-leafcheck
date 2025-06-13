@@ -7,29 +7,41 @@ leafcheck adalah aplikasi web sederhana yang memungkinkan pengguna mengunggah ga
 ##✨ Fitur Utama
 - 📤 Upload gambar daun jagung
 - 🤖 Analisis otomatis menggunakan model CNN
-- 📊 Menampilkan hasil prediksi secara informatif: nama penyakit, penjelasan, dan solusi
+- 📊 Menampilkan hasil prediksi secara informatif (nama penyakit, penjelasan, dan solusi)
+- 🌐 Terhubung ke API FastAPI yang dideploy di Railway
 - 💡 Antarmuka sederhana dan mudah digunakan
+- ⚡ Deployment frontend menggunakan Vercel
 
 ##🔧 Teknologi yang Digunakan
-- 🌐 HTML, CSS, JavaScript, Webpack Bundle, Node Js
-- 📦 Fetch API untuk komunikasi dengan backend
-- ☁️ Terhubung ke API FastAPI yang dideploy di Railway
-- Deployment menggunakan vercel
+- HTML, CSS, JavaScript
+- Node.js + Webpack
+- FastAPI (backend)
+- Railway (API)
+- Vercel (frontend)
 
-Menjalankan Frontend Secara Lokal
+🚀 Menjalankan Frontend Secara Lokal
 
-1. 🔃 Clone Repo
+1. **Clone Repo**
 
+```bash
 git clone https://github.com/aditiaprabowo3/frontend-leafcheck.git
+```
 
-2. Install dependency Yang Digunakan
+2. **Install Dependencies**
+
 ``` bin
 npm install
 ```
 
-3. jalankan Project
+3. **Jalankan Project (Development Mode)**
+
 ``` bin
 npm run start-dev
 ```
 
-4. Untuk end point api bisa sesuaikan dengan api yang tadi, tetapi harus menyesuaikan endpontnya dengan mendeploy ke railway atau yang lain
+4. **Konfigurasi Endpoint API**
+Pastikan URL endpoint backend (/predict) sudah mengarah ke FastAPI yang telah kamu deploy (misalnya via Railway). Contoh:
+
+```bash
+const BASE_URL = "https://api-leafcheck-production.up.railway.app/predict";
+```
