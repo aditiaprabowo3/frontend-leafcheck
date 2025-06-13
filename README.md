@@ -15,3 +15,21 @@ leafcheck adalah aplikasi web sederhana yang memungkinkan pengguna mengunggah ga
 - 📦 Fetch API untuk komunikasi dengan backend
 - ☁️ Terhubung ke API FastAPI yang dideploy di Railway
 - Deployment menggunakan vercel
+
+Menjalankan Frontend Secara Lokal
+
+1. 🔃 Clone Repo
+
+git clone https://github.com/aditiaprabowo3/frontend-leafcheck.git
+
+2. Install dependency Yang Digunakan
+``` bin
+npm install
+```
+
+3. jalankan Project
+``` bin
+npm run start-dev
+```
+
+4. Untuk end point api bisa sesuaikan dengan api yang tadi, tetapi harus menyesuaikan endpontnya dengan mendeploy ke railway atau yang lain
