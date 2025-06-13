@@ -3,6 +3,7 @@ import LeafCheckSource from '../../data/leafcheck-source';
 const DiagnosePage = {
     async render() {
         return `
+            <alert-content></alert-content>
             <diagnose-content></diagnose-content>
         `;
     },
@@ -84,6 +85,12 @@ const DiagnosePage = {
           } else {
             alert("Gagal menampilkan hasil prediksi gambarmu bukan daun.");
           }          
+        });
+
+        // handle alert
+        const closeBtn = document.querySelector(".alert-close-btn");
+          closeBtn?.addEventListener("click", () => {
+            document.getElementById("dataset-alert")?.remove();
         });
     },
 };

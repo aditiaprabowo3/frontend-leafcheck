@@ -13,6 +13,7 @@ import "./components/getstarted";
 import "./components/footer";
 import "./components/diagnose-predict";
 import "./components/about";
+import "./components/alert-banner";
 import App from "./views/app";
 
 const app = new App({

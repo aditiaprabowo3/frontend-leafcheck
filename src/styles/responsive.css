@@ -273,7 +273,9 @@
   .container-diagnose {
     padding: 0 4%;
   }
-  
+  .container-main {
+    padding: 0 4%;
+  }
 }
 
 @media (max-width: 678px) {

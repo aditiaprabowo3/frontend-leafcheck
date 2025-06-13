@@ -149,7 +149,7 @@ nav #hamburger {
   /* gap: 100px; */
   max-width: 80rem;
   padding-top: 72px;
-  margin: 64px auto 132px auto;
+  margin: 32px auto 132px auto;
   position: relative;
 }
 
@@ -867,3 +867,73 @@ footer p {
   box-shadow: none;
 }
 
+.alert-container {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  max-width: 60rem;
+  margin: 110px auto 0 auto;
+  font-family: system-ui, sans-serif;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.alert-grid {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.alert-icon-wrapper {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alert-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.alert-content {
+  flex-grow: 1;
+}
+
+.alert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alert-heading {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.alert-description {
+  margin-top: 0.5rem;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.alert-description p {
+  font-size: 16px !important;
+  font-weight: 500;
+  color: #333;
+}
+
+.alert-content h3 {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+
+.alert-close-btn {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  color: #333;
+  cursor: pointer;
+}
