@@ -15,9 +15,7 @@ leafcheck adalah aplikasi web sederhana yang memungkinkan pengguna mengunggah ga
 ##🔧 Teknologi yang Digunakan
 - HTML, CSS, JavaScript
 - Node.js + Webpack
-- FastAPI (backend)
-- Railway (API)
-- Vercel (frontend)
+- Deployment (Vercel)
 
 🚀 Menjalankan Frontend Secara Lokal
 
